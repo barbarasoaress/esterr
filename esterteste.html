@@ -38,7 +38,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        animation: mudar 5s linear;
+        animation: mudar 2s linear;
       }
 
       @keyframes mudar {
@@ -66,29 +66,13 @@
     </style>
   </head>
   <body>
-    <h1>Ester, você me ama?</h1>
+    <h1>Você me ama?</h1>
 
     <div>
       <button id="sim" class="botao">Sim</button>
       <button id="nao" class="botao">Não</button>
     </div>
 
-    <script>
-      const botaoNao = document.getElementById('nao');
-
-      botaoNao.addEventListener('click', () => {
-        botaoNao.classList.add('mudando');
-        setTimeout(() => {
-          botaoNao.classList.remove('mudando');
-        }, 9000);
-      });
-
-     const botaoSim = document.getElementById('sim');
-
-     botaoSim.addEventListener('click', () => {
-     window.location.href = 'https://www.youtube.com/shorts/h3l7FqfEpBA';
-     });
-
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
